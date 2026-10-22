@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * 🏥 DR. SAZZADUR RAHMAN RUMON - OFFICIAL WEBSITE SCRIPT
+ * 🏥 DR. SAJJADUR RAHMAN RUMON - OFFICIAL WEBSITE SCRIPT
  * Apple-Style Fluid Glass Experience (Bilingual: Bengali & English)
  * ==============================================================================
  */
@@ -38,8 +38,6 @@ const siteContent = {
     heroPatientsLabel: "সুস্থ রোগী",
     heroRatingVal: "৯৯%",
     heroRatingLabel: "রোগী সন্তুষ্টি",
-    bmdcBadge: "BMDC Reg No. A-84951",
-    bmdcVerified: "সরকারী নিবন্ধিত চিকিৎসক",
     heroCtaSerial: "অনলাইন সিরিয়াল বুকিং",
     heroCtaCall: "সরাসরি হটলাইন কল",
 
@@ -128,7 +126,7 @@ const siteContent = {
     
     // ফুটার
     footerDesc: "মেডিসিন ও ডায়াবেটিস চিকিৎসক, প্রভাষক, শহীদ জিয়াউর রহমান মেডিকেল কলেজ, বগুড়া।",
-    footerReg: "শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC) বগুড়া থেকে নিবন্ধিত এবং বিসিএস (স্বাস্থ্য) ক্যাডার কর্মকর্তা। বিএমডিসি রেজিঃ নং A-84951",
+    footerReg: "শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC), বগুড়ার প্রভাষক এবং বিসিএস (স্বাস্থ্য) ক্যাডার কর্মকর্তা।",
     footerHours: "রোগী দেখার সময়: শনি থেকে বুধ বিকাল ৩:৩০ টা | শুক্রবার সকাল ৯:০০ টা",
     footerRights: "সর্বস্বত্ব সংরক্ষিত। ডাঃ সাজ্জাদুর রহমান রুমন।"
   },
@@ -153,7 +151,7 @@ const siteContent = {
 
     // Hero Section
     heroBadge: "Registered Government Physician • BCS (Health)",
-    heroTitle: "Dr. Sazzadur Rahman Rumon",
+    heroTitle: "Dr. Sajjadur Rahman Rumon",
     heroSub: "MBBS (DMC), BCS (Health), CCD (BIRDEM), CMU (Ultra), M-Phil (Course)",
     heroMission: "Medicine & Diabetes Specialist Physician. Lecturer, Department of Physiology, Shaheed Ziaur Rahman Medical College (SZMC), Bogura.",
     heroExpVal: "12+ Years",
@@ -162,8 +160,6 @@ const siteContent = {
     heroPatientsLabel: "Happy Patients",
     heroRatingVal: "99%",
     heroRatingLabel: "Patient Satisfaction",
-    bmdcBadge: "BMDC Reg No. A-84951",
-    bmdcVerified: "Official Government Verified",
     heroCtaSerial: "Book Online Serial",
     heroCtaCall: "Direct Hotline Call",
 
@@ -220,7 +216,7 @@ const siteContent = {
     bioTitle: "Physician Profile & Career",
     bioSubtitle: "Learn about Dr. Rumon's academic credentials, clinical ethos, and service milestones.",
     bioHeading: "A Journey Rooted in Patient Compassion & Modern Science",
-    bioP1: "Dr. Sazzadur Rahman Rumon is a highly regarded General Medicine and Diabetes specialist in Bogura, Bangladesh. As an officer of the Bangladesh Civil Service (BCS Health) and Lecturer at Shaheed Ziaur Rahman Medical College (SZMC), he serves patients and medical students with devotion.",
+    bioP1: "Dr. Sajjadur Rahman Rumon is a highly regarded General Medicine and Diabetes specialist in Bogura, Bangladesh. As an officer of the Bangladesh Civil Service (BCS Health) and Lecturer at Shaheed Ziaur Rahman Medical College (SZMC), he serves patients and medical students with devotion.",
     bioP2: "His practice merges precise diagnostic evidence with holistic lifestyle modifications. He believes in using minimal, rational drug interventions while educating families on chronic disease self-management, nutritional optimization, and metabolic health.",
     
     // Testimonials
@@ -252,9 +248,9 @@ const siteContent = {
     
     // Footer
     footerDesc: "Medicine & Diabetes Specialist Physician. Lecturer, Shaheed Ziaur Rahman Medical College, Bogura.",
-    footerReg: "Registered with BMDC (Reg No. A-84951) and Officer of Bangladesh Civil Service (BCS Health).",
+    footerReg: "Lecturer at Shaheed Ziaur Rahman Medical College (SZMC), Bogura, and Officer of Bangladesh Civil Service (BCS Health).",
     footerHours: "Consultation Hours: Sat - Wed 3:30 PM | Fri 9:00 AM",
-    footerRights: "All Rights Reserved. Dr. Sazzadur Rahman Rumon."
+    footerRights: "All Rights Reserved. Dr. Sajjadur Rahman Rumon."
   }
 };
 

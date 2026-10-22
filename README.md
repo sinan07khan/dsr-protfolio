@@ -23,7 +23,7 @@ This is a premium Apple-style fluid glass portfolio and smart chamber serial boo
   - **Google Maps Integration**: 1-click directions to both chambers.
 - **Clinical Services & Treatments**: In-depth treatment cards with symptoms, clinical approach, and 1-tap booking trigger.
 - **Health Tips & Education**: Category filtering and live search for chronic care and seasonal prevention.
-- **Physician Timeline & Bio**: Verified BMDC Registration (`A-84951`), BCS Health Cadre credentials, and academic milestones.
+- **Physician Timeline & Bio**: Verified BMDC Registration, BCS Health Cadre credentials, and academic milestones.
 - **Patient Stories & Reviews**: Authentic patient experiences and recovery stories.
 - **Emergency Medical Advisory**: Apple glass advisory banner for critical emergency guidance.
 - **Full View Responsive for PC & Mobile**:

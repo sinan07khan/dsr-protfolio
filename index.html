@@ -3,39 +3,41 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>ডাঃ সাজ্জাদুর রহমান রুমন | Dr. Sazzadur Rahman Rumon - Medicine & Diabetes Specialist</title>
   <meta name="description"
-    content="ডাঃ সাজ্জাদুর রহমান রুমন - এমবিবিএস, বিসিএস (স্বাস্থ্য), সিসিডি (ডায়াবেটিস), প্রভাষক, শহীদ জিয়াউর রহমান মেডিকেল কলেজ, বগুড়া। মেডিসিন ও ডায়াবেটিস বিশেষজ্ঞ চিকিৎসক।" />
+    content="ডাঃ সাজ্জাদুর রহমান রুমন - এমবিবিএস (ডিএমসি), বিসিএস (স্বাস্থ্য), সিসিডি (বারডেম), প্রভাষক, শহীদ জিয়াউর রহমান মেডিকেল কলেজ, বগুড়া। মেডিসিন ও ডায়াবেটিস বিশেষজ্ঞ চিকিৎসক। BMDC Reg No. A-84951।" />
+  <meta name="theme-color" content="#0EA57A" />
 
-  <!-- Google Fonts -->
+  <!-- Preconnect & Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Tiro+Bangla:ital@0;1&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Tailwind CSS CDN with custom config -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
             brand: {
               50: '#eefcf8',
               100: '#d7f7ee',
-              500: '#12A585',
-              600: '#0e886d',
-              700: '#0b6c57',
+              500: '#0EA57A',
+              600: '#0b8a66',
+              700: '#08684d',
             },
             accent: {
-              500: '#3581B8',
-              600: '#286794',
+              500: '#0284C7',
+              600: '#0369a1',
             }
           },
           fontFamily: {
-            sans: ['"Hind Siliguri"', 'Inter', 'sans-serif'],
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Inter"', '"Hind Siliguri"', 'sans-serif'],
           }
         }
       }
@@ -45,108 +47,123 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Stylesheet -->
+  <!-- Apple Fluid Glass Stylesheet -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body class="bg-[#F7F9FA] text-slate-800 antialiased selection:bg-[#12A585]/20 selection:text-[#12A585] relative">
+<body class="selection:bg-[#0EA57A]/25 selection:text-[#0EA57A] relative min-h-screen">
 
-  <!-- Subtle Blurred Background Blobs -->
-  <div
-    class="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-[#12A585]/5 blur-[120px] pointer-events-none -z-10">
-  </div>
-  <div
-    class="fixed top-[40%] right-[-10%] w-[450px] h-[450px] rounded-full bg-[#3581B8]/5 blur-[110px] pointer-events-none -z-10">
-  </div>
-  <div
-    class="fixed bottom-[-10%] left-[20%] w-[550px] h-[550px] rounded-full bg-[#12A585]/5 blur-[130px] pointer-events-none -z-10">
+  <!-- ========================================================
+       APPLE AMBIENT FLUID MESH BACKGROUND
+       ======================================================== -->
+  <div class="fluid-ambient-mesh">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+    <div class="mesh-orb mesh-orb-4"></div>
   </div>
 
   <!-- ========================================================
-       TOP NAVIGATION BAR
+       APPLE FLOATING NAVIGATION PILL
        ======================================================== -->
-  <header id="mainNavbar"
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="fixed top-3 sm:top-5 left-0 right-0 z-50 px-3 sm:px-6">
+    <div id="mainNavbar"
+      class="max-w-6xl mx-auto h-16 sm:h-18 apple-nav-pill px-4 sm:px-6 flex items-center justify-between transition-all">
 
       <!-- Brand Logo -->
       <a href="#home" class="flex items-center gap-3 group">
         <div
-          class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#12A585] to-[#3581B8] p-0.5 shadow-md shadow-[#12A585]/20 group-hover:scale-105 transition-transform">
+          class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-[#0EA57A] to-[#0284C7] p-0.5 shadow-md shadow-[#0EA57A]/25 group-hover:scale-105 transition-transform">
           <div
-            class="w-full h-full bg-white rounded-[14px] flex items-center justify-center font-black text-lg text-[#12A585]">
+            class="w-full h-full bg-white dark:bg-slate-900 rounded-[14px] flex items-center justify-center font-black text-lg text-[#0EA57A]">
             S
           </div>
         </div>
-        <div>
-          <span class="font-black text-slate-900 tracking-tight text-base sm:text-lg block leading-none">
-            ডাঃ সাজ্জাদুর রহমান রুমন
-          </span>
-          <span class="text-[11px] font-bold text-[#12A585] uppercase tracking-wider block mt-1">
+        <div class="text-left">
+          <div class="flex items-center gap-1.5">
+            <span class="font-black text-slate-900 dark:text-white tracking-tight text-sm sm:text-base block leading-none">
+              ডাঃ সাজ্জাদুর রহমান রুমন
+            </span>
+            <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#0EA57A] fill-[#0EA57A]/15 shrink-0"></i>
+          </div>
+          <span class="text-[10px] font-bold text-[#0EA57A] uppercase tracking-wider block mt-1">
             Medicine & Diabetes Specialist
           </span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-bold text-slate-600">
-        <a href="#home" class="hover:text-[#12A585] transition-colors" data-i18n="navHome">হোম</a>
-        <a href="#chambers" class="hover:text-[#12A585] transition-colors" data-i18n="navChambers">চেম্বার সমূহ</a>
-        <a href="#treatments" class="hover:text-[#12A585] transition-colors" data-i18n="navTreatments">চিকিৎসা সেবা</a>
-        <a href="#health-tips" class="hover:text-[#12A585] transition-colors" data-i18n="navHealthTips">স্বাস্থ্য
-          টিপস</a>
-        <a href="#bio" class="hover:text-[#12A585] transition-colors" data-i18n="navBio">পরিচিতি</a>
-        <a href="#faq" class="hover:text-[#12A585] transition-colors" data-i18n="navFAQ">সাধারণ প্রশ্ন</a>
+      <nav class="hidden lg:flex items-center gap-6 text-xs xl:text-sm font-bold text-slate-600 dark:text-slate-300">
+        <a href="#home" class="hover:text-[#0EA57A] transition-colors" data-i18n="navHome">হোম</a>
+        <a href="#chambers" class="hover:text-[#0EA57A] transition-colors" data-i18n="navChambers">চেম্বার</a>
+        <a href="#screener" class="hover:text-[#0EA57A] transition-colors" data-i18n="navScreener">স্বাস্থ্য স্ক্রিনার</a>
+        <a href="#treatments" class="hover:text-[#0EA57A] transition-colors" data-i18n="navTreatments">চিকিৎসা সেবা</a>
+        <a href="#health-tips" class="hover:text-[#0EA57A] transition-colors" data-i18n="navHealthTips">স্বাস্থ্য টিপস</a>
+        <a href="#bio" class="hover:text-[#0EA57A] transition-colors" data-i18n="navBio">পরিচিতি</a>
+        <a href="#faq" class="hover:text-[#0EA57A] transition-colors" data-i18n="navFAQ">প্রশ্নোত্তর</a>
       </nav>
 
       <!-- Right Action Utilities -->
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- Theme Switcher (Dark/Light) -->
+        <button id="themeToggleBtn" onclick="toggleTheme()"
+          class="w-9 h-9 rounded-full apple-glass flex items-center justify-center text-slate-700 dark:text-slate-200 hover:border-[#0EA57A]/40 transition-all cursor-pointer"
+          title="Toggle Theme">
+          <i data-lucide="moon" class="w-4 h-4"></i>
+        </button>
+
         <!-- Language Switcher -->
         <button id="langToggleBtn" onclick="toggleLanguage()"
-          class="px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold transition-all shadow-sm cursor-pointer flex items-center gap-1.5"
+          class="px-3 py-1.5 rounded-full apple-glass hover:border-[#0EA57A]/40 text-slate-700 dark:text-slate-200 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5"
           title="Switch Language">
-          <i data-lucide="globe" class="w-3.5 h-3.5 text-[#12A585]"></i>
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-[#0EA57A]"></i>
           <span class="font-bold text-xs">EN</span>
         </button>
 
-        <!-- CTA Hotline Button -->
+        <!-- Serial CTA Button -->
         <button onclick="openBookingModal()"
-          class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#12A585] hover:bg-[#0e886d] text-white text-xs font-black shadow-md shadow-[#12A585]/20 transition-all hover:-translate-y-0.5 cursor-pointer">
-          <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
+          class="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full apple-btn apple-btn-primary text-xs font-black shadow-md cursor-pointer">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
           <span data-i18n="btnTakeSerial">সিরিয়াল নিন</span>
         </button>
 
         <!-- Mobile Menu Toggle Button -->
         <button onclick="toggleMobileMenu()"
-          class="md:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors cursor-pointer"
+          class="lg:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
           aria-label="Toggle Menu">
-          <i data-lucide="menu" class="w-6 h-6"></i>
+          <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
       </div>
 
     </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+    <!-- Mobile Apple Glass Dropdown Menu -->
+    <div id="mobileMenu"
+      class="hidden lg:hidden mt-2 max-w-6xl mx-auto apple-glass rounded-3xl p-5 space-y-3.5 shadow-2xl fade-in text-left">
       <a href="#home" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navHome">হোম</a>
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navHome">হোম</a>
       <a href="#chambers" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navChambers">চেম্বার
-        সমূহ</a>
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navChambers">চেম্বার সমূহ</a>
+      <a href="#screener" onclick="closeMobileMenu()"
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navScreener">ইন্টারেক্টিভ হেলথ স্ক্রিনার</a>
       <a href="#treatments" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navTreatments">চিকিৎসা
-        সেবা</a>
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navTreatments">চিকিৎসা সেবা</a>
       <a href="#health-tips" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navHealthTips">স্বাস্থ্য
-        টিপস</a>
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navHealthTips">স্বাস্থ্য টিপস</a>
       <a href="#bio" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navBio">পরিচিতি</a>
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navBio">পরিচিতি ও টাইমলাইন</a>
       <a href="#faq" onclick="closeMobileMenu()"
-        class="block py-2 text-sm font-bold text-slate-700 hover:text-[#12A585]" data-i18n="navFAQ">সাধারণ প্রশ্ন</a>
-      <div class="pt-2">
+        class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200 hover:text-[#0EA57A]" data-i18n="navFAQ">সাধারণ প্রশ্ন</a>
+
+      <div class="pt-3 border-t border-slate-200/60 dark:border-slate-800 grid grid-cols-2 gap-2">
+        <a href="tel:01302031077"
+          class="py-2.5 rounded-xl apple-btn apple-btn-glass text-xs font-bold text-slate-800 dark:text-white flex items-center justify-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-[#0EA57A]"></i>
+          <span>01302-031077</span>
+        </a>
         <button onclick="closeMobileMenu(); openBookingModal();"
-          class="w-full py-3 rounded-xl bg-[#12A585] text-white text-sm font-black flex items-center justify-center gap-2 shadow-md">
-          <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
+          class="py-2.5 rounded-xl apple-btn apple-btn-primary text-xs font-black flex items-center justify-center gap-1.5">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
           <span data-i18n="btnTakeSerial">সিরিয়াল নিন</span>
         </button>
       </div>
@@ -154,109 +171,141 @@
   </header>
 
   <!-- ========================================================
-       HERO SECTION
+       HERO SECTION (Apple Glass Full View for PC & Mobile)
        ======================================================== -->
   <section id="home"
-    class="pt-32 pb-16 lg:pt-40 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[calc(100vh-80px)] flex items-center">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+    class="pt-28 sm:pt-36 pb-16 lg:pt-44 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[calc(100vh-60px)] flex items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
 
-      <!-- Left Column: Bio / Text / CTA -->
+      <!-- Left Column: Doctor Bio / Info / CTA -->
       <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
 
-        <!-- Trust Badge -->
-        <div
-          class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#12A585]/10 border border-[#12A585]/20 text-[#12A585] text-xs font-black tracking-wide">
-          <i data-lucide="sparkles" class="w-4 h-4"></i>
-          <span data-i18n="heroBadge">নিবন্ধিত চিকিৎসক • বিসিএস (স্বাস্থ্য)</span>
+        <!-- Dynamic Live Chamber Status Badge -->
+        <div id="liveChamberStatusBadge" class="fade-in">
+          <!-- Injected via updateLiveChamberBadge() -->
         </div>
 
-        <!-- Doctor Name -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight"
+        <!-- Trust Badges Row -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+          <div
+            class="apple-badge">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span data-i18n="heroBadge">নিবন্ধিত সরকারি চিকিৎসক • বিসিএস (স্বাস্থ্য)</span>
+          </div>
+
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold apple-glass border border-slate-300/50 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#0EA57A]"></i>
+            <span data-i18n="bmdcBadge">BMDC Reg No. A-84951</span>
+          </div>
+        </div>
+
+        <!-- Doctor Name with Apple Shimmer -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight apple-text-shimmer"
           data-i18n="heroTitle">
           ডাঃ সাজ্জাদুর রহমান রুমন
         </h1>
 
         <!-- Qualifications -->
-        <p class="text-base sm:text-lg font-bold text-[#3581B8] leading-snug" data-i18n="heroSub">
-          এমবিবিএস, বিসিএস (স্বাস্থ্য), সিসিডি (ডায়াবেটিস), সিএমইউ, এম-ফিল (কোর্স)
+        <p class="text-sm sm:text-base lg:text-lg font-bold text-[#0284C7] dark:text-[#38BDF8] leading-snug"
+          data-i18n="heroSub">
+          এমবিবিএস (ডিএমসি), বিসিএস (স্বাস্থ্য), সিসিডি (বারডেম), সিএমইউ (আল্ট্রা), এম-ফিল (কোর্স)
         </p>
 
-        <!-- Mission -->
-        <p class="text-sm sm:text-base text-slate-600 max-w-xl leading-relaxed" data-i18n="heroMission">
-          মেডিসিন ও ডায়াবেটিস চিকিৎসক। প্রভাষক, শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC), বগুড়া।
+        <!-- Mission & Position -->
+        <p class="text-xs sm:text-sm lg:text-base text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed"
+          data-i18n="heroMission">
+          মেডিসিন ও ডায়াবেটিস বিশেষজ্ঞ চিকিৎসক। প্রভাষক, ফিজিওলজি বিভাগ, শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC), বগুড়া।
         </p>
 
-        <!-- Stats Indicators -->
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-2 w-full">
-          <div
-            class="flex items-center gap-3.5 bg-white/80 backdrop-blur-md px-4 py-3 rounded-2xl border border-slate-200/80 shadow-sm">
-            <div class="w-11 h-11 rounded-xl bg-[#3581B8]/10 flex items-center justify-center text-[#3581B8]">
-              <i data-lucide="award" class="w-5 h-5"></i>
-            </div>
-            <div class="text-left">
-              <span class="block text-base font-black text-slate-900" data-i18n="heroExpVal">১২+ বছর</span>
-              <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-bold"
-                data-i18n="heroExpLabel">অভিজ্ঞতা</span>
-            </div>
+        <!-- Apple Health Metrics Cards -->
+        <div class="grid grid-cols-3 gap-3 sm:gap-4 pt-1 w-full max-w-lg">
+          <div class="apple-glass rounded-2xl p-3 sm:p-4 text-center">
+            <span class="block text-lg sm:text-xl font-black text-slate-900 dark:text-white" data-i18n="heroExpVal">১২+ বছর</span>
+            <span class="block text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold mt-0.5"
+              data-i18n="heroExpLabel">অভিজ্ঞতা</span>
           </div>
 
-          <div
-            class="flex items-center gap-3.5 bg-white/80 backdrop-blur-md px-4 py-3 rounded-2xl border border-slate-200/80 shadow-sm">
-            <div class="w-11 h-11 rounded-xl bg-[#12A585]/10 flex items-center justify-center text-[#12A585]">
-              <i data-lucide="users" class="w-5 h-5"></i>
-            </div>
-            <div class="text-left">
-              <span class="block text-base font-black text-slate-900" data-i18n="heroPatientsVal">১৫,০০০+</span>
-              <span class="block text-[11px] uppercase tracking-wider text-slate-400 font-bold"
-                data-i18n="heroPatientsLabel">সুস্থ রোগী</span>
-            </div>
+          <div class="apple-glass rounded-2xl p-3 sm:p-4 text-center">
+            <span class="block text-lg sm:text-xl font-black text-slate-900 dark:text-white" data-i18n="heroPatientsVal">১৫,০০০+</span>
+            <span class="block text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold mt-0.5"
+              data-i18n="heroPatientsLabel">সুস্থ রোগী</span>
+          </div>
+
+          <div class="apple-glass rounded-2xl p-3 sm:p-4 text-center">
+            <span class="block text-lg sm:text-xl font-black text-[#0EA57A]" data-i18n="heroRatingVal">৯৯%</span>
+            <span class="block text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold mt-0.5"
+              data-i18n="heroRatingLabel">সন্তুষ্টি</span>
           </div>
         </div>
 
         <!-- Hero Action Buttons -->
-        <div class="flex flex-col sm:flex-row gap-3.5 pt-4 w-full sm:w-auto">
-          <a href="#chambers"
-            class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#3581B8] hover:bg-[#286794] text-white font-black text-sm sm:text-base rounded-2xl shadow-lg shadow-[#3581B8]/25 transition-all hover:-translate-y-0.5 cursor-pointer">
-            <i data-lucide="calendar" class="w-5 h-5"></i>
-            <span data-i18n="heroCtaSerial">সিরিয়াল নিন (Get Serial)</span>
-          </a>
+        <div class="flex flex-col sm:flex-row gap-3 pt-3 w-full sm:w-auto">
+          <button onclick="openBookingModal()"
+            class="apple-btn apple-btn-primary px-7 py-3.5 text-xs sm:text-sm font-black shadow-lg">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            <span data-i18n="heroCtaSerial">অনলাইন সিরিয়াল বুকিং</span>
+          </button>
 
           <a href="tel:01302031077"
-            class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-black text-sm sm:text-base rounded-2xl shadow-sm transition-all hover:-translate-y-0.5 cursor-pointer">
-            <i data-lucide="phone-call" class="w-5 h-5 text-[#12A585]"></i>
+            class="apple-btn apple-btn-glass px-7 py-3.5 text-xs sm:text-sm font-bold">
+            <i data-lucide="phone-call" class="w-4 h-4 text-[#0EA57A]"></i>
             <span>01302-031077</span>
+          </a>
+
+          <a href="https://wa.me/8801302031077?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%A1%E0%A6%BE.%20%E0%A6%B8%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%B0%20%E0%A6%B0%E0%A6%B9%E0%A6%AE%E0%A6%BE%E0%A6%A8%20%E0%A6%B0%E0%A7%81%E0%A6%AE%E0%A6%A8%20%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%20%E0%A6%AC%E0%A7%81%E0%A6%95%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87।"
+            target="_blank" rel="noopener noreferrer"
+            class="apple-btn apple-btn-glass px-4 py-3.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+            <i data-lucide="message-square" class="w-4 h-4 fill-emerald-500 text-transparent"></i>
+            <span>WhatsApp</span>
           </a>
         </div>
 
       </div>
 
-      <!-- Right Column: Doctor Portrait -->
-      <!-- 📸 CUSTOMIZE DOCTOR PHOTO:
-           ডাক্তারের ছবি পরিবর্তন করতে নতুন ছবি রেখে নিচের src পরিবর্তন করুন:
-           src="আপনার_ছবির_নাম.jpg"
-      -->
+      <!-- Right Column: Doctor Portrait in Apple Glass Frame -->
       <div class="lg:col-span-5 flex justify-center lg:justify-end">
-        <div
-          class="relative w-full max-w-[440px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/50 border-4 border-white bg-slate-100">
-          <img src="doctor.jpg" alt="ডাঃ সাজ্জাদুর রহমান রুমন" class="w-full h-full object-cover object-top"
-            loading="eager" />
+        <div class="relative w-full max-w-[420px] aspect-[4/5] apple-glass-card p-2 sm:p-2.5">
+          
+          <div class="w-full h-full rounded-[24px] overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+            <img src="doctor.jpg" alt="ডাঃ সাজ্জাদুর রহমান রুমন" class="w-full h-full object-cover object-top"
+              loading="eager" />
 
-          <!-- BMDC Verification Overlay Badge -->
-          <div class="absolute bottom-5 left-5 right-5">
-            <div
-              class="bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-lg border border-slate-100 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-[#12A585]/15 flex items-center justify-center text-[#12A585]">
-                  <i data-lucide="check-circle-2" class="w-4 h-4"></i>
-                </div>
+            <!-- Floating Top Glass Badge: BMDC Verification -->
+            <div class="absolute top-4 left-4 right-4 flex justify-between items-center pointer-events-none">
+              <div
+                class="apple-glass px-3.5 py-1.5 rounded-full flex items-center gap-2 shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span class="text-[10px] font-black uppercase tracking-wider text-slate-800 dark:text-white">
+                  BMDC A-84951
+                </span>
+              </div>
+
+              <div
+                class="apple-glass px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-[#0EA57A]"></i>
+                <span class="text-[10px] font-bold text-[#0EA57A]">SZMC Faculty</span>
+              </div>
+            </div>
+
+            <!-- Floating Bottom Glass Card: Credentials -->
+            <div class="absolute bottom-4 left-4 right-4">
+              <div
+                class="apple-glass px-4 py-3 rounded-2xl shadow-xl flex items-center justify-between">
                 <div class="text-left">
-                  <span class="block text-xs font-bold text-slate-800" data-i18n="bmdcBadge">BMDC Reg No.</span>
-                  <span class="block text-[10px] text-[#12A585] font-bold uppercase tracking-wider">Government
-                    Verified</span>
+                  <span class="block text-xs font-black text-slate-900 dark:text-white">
+                    ডাঃ সাজ্জাদুর রহমান রুমন
+                  </span>
+                  <span class="block text-[10px] text-[#0EA57A] font-bold">
+                    Lecturer, SZMC & Diabetologist
+                  </span>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-[#0EA57A]/15 flex items-center justify-center text-[#0EA57A]">
+                  <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
                 </div>
               </div>
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
             </div>
+
           </div>
         </div>
       </div>
@@ -267,134 +316,268 @@
   <!-- ========================================================
        CHAMBERS & DIRECT HELPLINE SECTION
        ======================================================== -->
-  <section id="chambers" class="py-16 bg-[#F3F4F6]/50 border-y border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="chambers" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="chambersTitle">
+        চেম্বার ও সিরিয়াল হেল্পলাইন
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="chambersSubtitle">
+        আপনার সুবিধাজনক সময়ে সরাসরি চেম্বারে সাক্ষাতের জন্য কল করুন বা সিরিয়াল বুক করুন।
+      </p>
+    </div>
 
-      <!-- Section Header -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight" data-i18n="chambersTitle">
-          চেম্বার ও সিরিয়াল হেল্পলাইন
-        </h2>
-        <div class="h-1 w-20 bg-gradient-to-r from-[#12A585] to-[#3581B8] mx-auto rounded-full mb-4"></div>
-        <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="chambersSubtitle">
-          আপনার সুবিধাজনক সময়ে সরাসরি চেম্বারে সাক্ষাতের জন্য কল করুন বা সিরিয়াল বুক করুন।
-        </p>
-      </div>
+    <!-- Chamber Cards Grid -->
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
-      <!-- Chamber Cards Grid -->
-      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-
-        <!-- Chamber 1: Oxygen Health Care -->
-        <div
-          class="bg-white rounded-3xl border border-slate-200 shadow-md overflow-hidden card-hover flex flex-col justify-between">
-          <div>
-            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
-              <div>
-                <span class="text-[10px] font-black uppercase tracking-widest text-[#12A585] block"
-                  data-i18n="c1Tag">CHAMBER ONE • ACTIVE</span>
-                <h4 class="text-lg font-black tracking-tight">চেম্বার ১</h4>
-              </div>
-              <span
-                class="text-[10px] font-bold px-3 py-1 bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 rounded-full">
-                Active
-              </span>
+      <!-- Chamber 1: Oxygen Health Care -->
+      <div class="apple-glass-card p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <!-- Header Bar -->
+          <div class="flex items-center justify-between pb-5 border-b border-slate-200/60 dark:border-slate-800">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-widest text-[#0EA57A] block"
+                data-i18n="c1Tag">CHAMBER ONE • ACTIVE</span>
+              <h4 class="text-xl font-black tracking-tight text-slate-900 dark:text-white mt-0.5">চেম্বার ১</h4>
             </div>
-
-            <div class="p-6 space-y-4 text-left">
-              <h5 class="font-black text-slate-900 text-lg leading-tight" data-i18n="c1Name">
-                Oxygen Health Care (অক্সিজেন হেলথকেয়ার)
-              </h5>
-
-              <div class="space-y-2.5 text-xs sm:text-sm font-semibold text-slate-600">
-                <div class="flex items-start gap-2.5">
-                  <i data-lucide="map-pin" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
-                  <span>Location: <strong class="text-slate-900" data-i18n="c1Location">গাবতলী, বগুড়া</strong></span>
-                </div>
-
-                <div class="flex items-start gap-2.5">
-                  <i data-lucide="clock" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
-                  <span data-i18n="c1Hours">শনি থেকে বুধ: বিকাল ৩:৩০ টা | শুক্রবার সকাল ৯:০০ টা</span>
-                </div>
-
-                <div class="flex items-center gap-2.5 pt-1">
-                  <i data-lucide="phone" class="w-4 h-4 text-slate-400 shrink-0"></i>
-                  <span class="text-slate-900 font-mono font-bold text-base" data-i18n="c1Phone">01302-031077</span>
-                  <button onclick="copyNumber('01302031077')"
-                    class="p-1 hover:bg-slate-100 rounded text-slate-400 hover:text-slate-700 cursor-pointer"
-                    title="Copy Number">
-                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <span
+              class="text-[10px] font-bold px-3 py-1 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 rounded-full flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Active
+            </span>
           </div>
 
-          <div class="p-6 pt-0">
-            <a href="tel:01302031077"
-              class="w-full inline-flex items-center justify-center gap-2 py-3.5 bg-[#12A585] hover:bg-[#0e886d] text-white font-black text-sm rounded-xl shadow-md transition-all cursor-pointer">
-              <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
-              <span data-i18n="btnCallNow">সরাসরি কল করুন</span>
-            </a>
+          <!-- Body Info -->
+          <div class="py-6 space-y-4 text-left">
+            <h5 class="font-black text-slate-900 dark:text-white text-lg leading-tight" data-i18n="c1Name">
+              Oxygen Health Care (অক্সিজেন হেলথকেয়ার)
+            </h5>
+
+            <div class="space-y-3 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-[#0EA57A] shrink-0 mt-0.5"></i>
+                <span>লোকেশন: <strong class="text-slate-900 dark:text-slate-100" data-i18n="c1Location">গাবতলী, বগুড়া</strong></span>
+              </div>
+
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="clock" class="w-4 h-4 text-[#0EA57A] shrink-0 mt-0.5"></i>
+                <span data-i18n="c1Hours">শনি থেকে বুধ: বিকাল ৩:৩০ টা | শুক্রবার সকাল ৯:০০ টা</span>
+              </div>
+
+              <div class="flex items-center gap-2.5 pt-1">
+                <i data-lucide="phone" class="w-4 h-4 text-[#0EA57A] shrink-0"></i>
+                <span class="text-slate-900 dark:text-white font-mono font-bold text-base" data-i18n="c1Phone">01302-031077</span>
+                <button onclick="copyNumber('01302031077')"
+                  class="p-1.5 hover:bg-slate-200/50 dark:hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer transition-colors"
+                  title="Copy Number">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Chamber 2: Elite Diagnostic -->
-        <div
-          class="bg-white rounded-3xl border border-slate-200 shadow-md overflow-hidden card-hover flex flex-col justify-between">
-          <div>
-            <div class="bg-[#064E3B] text-white px-6 py-4 flex items-center justify-between">
-              <div>
-                <span class="text-[10px] font-black uppercase tracking-widest text-emerald-300 block"
-                  data-i18n="c2Tag">CHAMBER TWO • ACTIVE</span>
-                <h4 class="text-lg font-black tracking-tight">চেম্বার ২</h4>
-              </div>
-              <span
-                class="text-[10px] font-bold px-3 py-1 bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 rounded-full">
-                Active
-              </span>
+        <!-- Action Buttons -->
+        <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800 grid grid-cols-2 gap-3">
+          <a href="tel:01302031077"
+            class="apple-btn apple-btn-primary py-3 text-xs font-black shadow-md">
+            <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
+            <span data-i18n="btnCallNow">সরাসরি কল</span>
+          </a>
+
+          <a href="https://maps.google.com/?q=Oxygen+Health+Care+Gabtali+Bogura" target="_blank" rel="noopener noreferrer"
+            class="apple-btn apple-btn-glass py-3 text-xs font-bold">
+            <i data-lucide="map" class="w-4 h-4 text-[#0EA57A]"></i>
+            <span data-i18n="btnGoogleMaps">ম্যাপ লোকেশন</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Chamber 2: Elite Diagnostic -->
+      <div class="apple-glass-card p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <!-- Header Bar -->
+          <div class="flex items-center justify-between pb-5 border-b border-slate-200/60 dark:border-slate-800">
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-widest text-[#0284C7] block"
+                data-i18n="c2Tag">CHAMBER TWO • ACTIVE</span>
+              <h4 class="text-xl font-black tracking-tight text-slate-900 dark:text-white mt-0.5">চেম্বার ২</h4>
             </div>
-
-            <div class="p-6 space-y-4 text-left">
-              <h5 class="font-black text-slate-900 text-lg leading-tight" data-i18n="c2Name">
-                Elite Diagnostic & Consultation Center (এলিট ডায়াগনস্টিক)
-              </h5>
-
-              <div class="space-y-2.5 text-xs sm:text-sm font-semibold text-slate-600">
-                <div class="flex items-start gap-2.5">
-                  <i data-lucide="map-pin" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
-                  <span>Location: <strong class="text-slate-900" data-i18n="c2Location">ইয়ারকুবিয়া মোড়,
-                      বগুড়া</strong></span>
-                </div>
-
-                <div class="flex items-start gap-2.5">
-                  <i data-lucide="clock" class="w-4 h-4 text-slate-400 shrink-0 mt-0.5"></i>
-                  <span data-i18n="c2Hours">সিরিয়ালের জন্য ফোন করুন</span>
-                </div>
-
-                <div class="flex items-center gap-2.5 pt-1">
-                  <i data-lucide="phone" class="w-4 h-4 text-slate-400 shrink-0"></i>
-                  <span class="text-slate-900 font-mono font-bold text-base" data-i18n="c2Phone">01735 164 172</span>
-                  <button onclick="copyNumber('01735164172')"
-                    class="p-1 hover:bg-slate-100 rounded text-slate-400 hover:text-slate-700 cursor-pointer"
-                    title="Copy Number">
-                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <span
+              class="text-[10px] font-bold px-3 py-1 bg-sky-500/15 text-sky-600 dark:text-sky-400 border border-sky-500/30 rounded-full flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse"></span> Active
+            </span>
           </div>
 
-          <div class="p-6 pt-0">
-            <a href="tel:01735164172"
-              class="w-full inline-flex items-center justify-center gap-2 py-3.5 bg-[#064E3B] hover:bg-[#043b2b] text-white font-black text-sm rounded-xl shadow-md transition-all cursor-pointer">
-              <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
-              <span data-i18n="btnCallNow">সরাসরি কল করুন</span>
-            </a>
+          <!-- Body Info -->
+          <div class="py-6 space-y-4 text-left">
+            <h5 class="font-black text-slate-900 dark:text-white text-lg leading-tight" data-i18n="c2Name">
+              Elite Diagnostic & Consultation Center (এলিট ডায়াগনস্টিক)
+            </h5>
+
+            <div class="space-y-3 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300">
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-[#0284C7] shrink-0 mt-0.5"></i>
+                <span>লোকেশন: <strong class="text-slate-900 dark:text-slate-100" data-i18n="c2Location">ইয়ারকুবিয়া মোড়, শেরপুর রোড, বগুড়া</strong></span>
+              </div>
+
+              <div class="flex items-start gap-2.5">
+                <i data-lucide="clock" class="w-4 h-4 text-[#0284C7] shrink-0 mt-0.5"></i>
+                <span data-i18n="c2Hours">সিরিয়ালের জন্য ফোন করুন</span>
+              </div>
+
+              <div class="flex items-center gap-2.5 pt-1">
+                <i data-lucide="phone" class="w-4 h-4 text-[#0284C7] shrink-0"></i>
+                <span class="text-slate-900 dark:text-white font-mono font-bold text-base" data-i18n="c2Phone">01735 164 172</span>
+                <button onclick="copyNumber('01735164172')"
+                  class="p-1.5 hover:bg-slate-200/50 dark:hover:bg-slate-800 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer transition-colors"
+                  title="Copy Number">
+                  <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Action Buttons -->
+        <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800 grid grid-cols-2 gap-3">
+          <a href="tel:01735164172"
+            class="apple-btn apple-btn-secondary py-3 text-xs font-black shadow-md">
+            <i data-lucide="phone-call" class="w-4 h-4 fill-current"></i>
+            <span data-i18n="btnCallNow">সরাসরি কল</span>
+          </a>
+
+          <a href="https://maps.google.com/?q=Elite+Diagnostic+Center+Bogura" target="_blank" rel="noopener noreferrer"
+            class="apple-btn apple-btn-glass py-3 text-xs font-bold">
+            <i data-lucide="map" class="w-4 h-4 text-[#0284C7]"></i>
+            <span data-i18n="btnGoogleMaps">ম্যাপ লোকেশন</span>
+          </a>
+        </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ========================================================
+       NEW: INTERACTIVE APPLE HEALTH & BMI SCREENER SECTION
+       ======================================================== -->
+  <section id="screener" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="apple-badge mb-3">
+        <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+        <span>Apple Health Inspired Assessment</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="screenerSectionTitle">
+        ইন্টারেক্টিভ হেলথ স্ক্রিনার
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="screenerSectionSubtitle">
+        আপনার বিএমআই (BMI), মেটাবলিক ঝুঁকি ও ডায়াবেটিস সম্ভাবনা দ্রুত যাচাই করুন।
+      </p>
+    </div>
+
+    <!-- Screener Glass Container -->
+    <div class="apple-glass-card max-w-4xl mx-auto p-6 sm:p-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+        <!-- Controls Column (Left) -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+
+          <!-- Height Control -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-black text-slate-800 dark:text-slate-200" data-i18n="screenerHeightLabel">
+                আপনার উচ্চতা:
+              </label>
+              <span id="screenerHeightVal" class="text-xs font-mono font-bold text-[#0EA57A]">
+                165 cm (5'5")
+              </span>
+            </div>
+            <input type="range" id="screenerHeight" min="120" max="210" value="165" class="apple-range" />
+            <div class="flex justify-between text-[10px] text-slate-400 font-bold mt-1">
+              <span>120 cm (3'11")</span>
+              <span>165 cm</span>
+              <span>210 cm (6'11")</span>
+            </div>
+          </div>
+
+          <!-- Weight Control -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-black text-slate-800 dark:text-slate-200" data-i18n="screenerWeightLabel">
+                আপনার ওজন:
+              </label>
+              <span id="screenerWeightVal" class="text-xs font-mono font-bold text-[#0EA57A]">
+                68 kg
+              </span>
+            </div>
+            <input type="range" id="screenerWeight" min="35" max="150" value="68" class="apple-range" />
+            <div class="flex justify-between text-[10px] text-slate-400 font-bold mt-1">
+              <span>35 kg</span>
+              <span>68 kg</span>
+              <span>150 kg</span>
+            </div>
+          </div>
+
+          <!-- Optional Blood Sugar -->
+          <div>
+            <label class="block text-xs font-black text-slate-800 dark:text-slate-200 mb-1.5" data-i18n="screenerSugarLabel">
+              রক্তে গ্লুকোজ লেভেল (ঐচ্ছিক - mmol/L):
+            </label>
+            <div class="relative">
+              <input type="number" step="0.1" id="screenerSugar" placeholder="e.g. 5.8"
+                class="w-full px-4 py-2.5 rounded-xl apple-glass text-xs font-mono font-bold text-slate-800 dark:text-white focus:outline-none focus:border-[#0EA57A]" />
+              <span class="absolute right-3.5 top-2.5 text-[10px] font-bold text-slate-400">mmol/L</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Results Card (Right) -->
+        <div class="lg:col-span-5 apple-glass rounded-2xl p-6 text-center space-y-4 border border-slate-200/80 dark:border-slate-800">
+          <span class="text-[10px] font-black uppercase tracking-widest text-slate-400 block" data-i18n="screenerResultTitle">
+            আপনার স্বাস্থ্য মূল্যায়ন
+          </span>
+
+          <!-- Big BMI Display -->
+          <div class="py-2">
+            <span id="screenerBmiScore" class="text-5xl font-black text-slate-900 dark:text-white font-mono tracking-tight">
+              25.0
+            </span>
+            <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-1">
+              BMI Score
+            </span>
+          </div>
+
+          <!-- Category Badge -->
+          <div id="screenerCategory" class="text-base font-black text-emerald-500">
+            আদর্শ ওজন (Normal Weight)
+          </div>
+
+          <!-- Gauge Indicator Bar -->
+          <div class="w-full bg-slate-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+            <div id="screenerProgressBar" class="h-full bg-gradient-to-r from-emerald-400 via-amber-400 to-rose-500 transition-all duration-300" style="width: 50%;"></div>
+          </div>
+
+          <!-- Advice Output -->
+          <p id="screenerAdviceText" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+            আপনার ওজন চমৎকার ও স্বাস্থ্যসম্মত সীমায় রয়েছে।
+          </p>
+
+          <!-- Consult Action -->
+          <button onclick="openBookingModal('ডায়াবেটিস ও বিএমআই স্বাস্থ্য পরামর্শ')"
+            class="w-full py-2.5 apple-btn apple-btn-primary text-xs font-black">
+            <i data-lucide="stethoscope" class="w-3.5 h-3.5"></i>
+            <span data-i18n="screenerAdviceBtn">পরামর্শের জন্য সিরিয়াল নিন</span>
+          </button>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -404,28 +587,29 @@
   <section id="treatments" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight" data-i18n="treatmentsTitle">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="treatmentsTitle">
         চিকিৎসা ও সেবা সমূহ
       </h2>
-      <div class="h-1 w-20 bg-gradient-to-r from-[#12A585] to-[#3581B8] mx-auto rounded-full mb-4"></div>
-      <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="treatmentsSubtitle">
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="treatmentsSubtitle">
         দীর্ঘমেয়াদী অসুস্থতার সুনির্দিষ্ট থেরাপি, মেটাবলিক স্বাস্থ্য সুরক্ষা এবং ব্যক্তিগত স্বাস্থ্য পরিকল্পনা।
       </p>
     </div>
 
     <!-- Clinical Approach Trust Card -->
     <div
-      class="mb-12 bg-white/80 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-6">
-      <div class="w-14 h-14 rounded-2xl bg-[#12A585]/10 flex items-center justify-center text-[#12A585] shrink-0">
+      class="mb-12 apple-glass p-6 sm:p-8 rounded-3xl max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+      <div class="w-14 h-14 rounded-2xl bg-[#0EA57A]/15 flex items-center justify-center text-[#0EA57A] shrink-0">
         <i data-lucide="shield-check" class="w-8 h-8"></i>
       </div>
-      <div class="text-center sm:text-left">
-        <h4 class="font-black text-slate-900 text-lg mb-1" data-i18n="approachTitle">
-          আমার ক্লিনিকাল পদ্ধতি
+      <div>
+        <h4 class="font-black text-slate-900 dark:text-white text-lg mb-1" data-i18n="approachTitle">
+          আমাদের আধুনিক ক্লিনিকাল পদ্ধতি
         </h4>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="approachDesc">
-          প্রতিটি পরামর্শ রোগীর বিস্তৃত ইতিহাস, সহজ ভাষায় রোগ বুঝিয়ে দেওয়া এবং পরিমিত ওষুধের সাহায্যে স্থায়ী নিরাময়
-          নিশ্চিত করতে পরিচালিত হয়।
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="approachDesc">
+          প্রতিটি পরামর্শ রোগীর বিস্তৃত ইতিহাস, সহজ ভাষায় রোগ বুঝিয়ে দেওয়া এবং পরিমিত ওষুধের সাহায্যে স্থায়ী নিরাময় নিশ্চিত করতে পরিচালিত হয়।
         </p>
       </div>
     </div>
@@ -439,52 +623,50 @@
   <!-- ========================================================
        HEALTH TIPS & PATIENT EDUCATION SECTION
        ======================================================== -->
-  <section id="health-tips" class="py-16 bg-[#F3F4F6]/40 border-y border-slate-200/60 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
+  <section id="health-tips" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="tipsTitle">
+        রোগী স্বাস্থ্য শিক্ষা ও সচেতনতা
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="tipsSubtitle">
+        সুস্থ থাকতে কার্যকর ঘরোয়া টিপস, বৈজ্ঞানিক ডায়েট এবং রোগ প্রতিরোধের সুনির্দিষ্ট পরামর্শ।
+      </p>
+    </div>
 
-      <!-- Header -->
-      <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight" data-i18n="tipsTitle">
-          রোগী স্বাস্থ্য শিক্ষা ও সচেতনতা
-        </h2>
-        <div class="h-1 w-20 bg-gradient-to-r from-[#12A585] to-[#3581B8] mx-auto rounded-full mb-4"></div>
-        <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="tipsSubtitle">
-          সুস্থ থাকতে কার্যকর ঘরোয়া টিপস, বৈজ্ঞানিক ডায়েট এবং রোগ প্রতিরোধের সুনির্দিষ্ট পরামর্শ।
-        </p>
+    <!-- Controls: Search & Category Filter Pills -->
+    <div class="max-w-3xl mx-auto mb-10 space-y-4">
+      <!-- Live Search -->
+      <div class="relative">
+        <i data-lucide="search" class="w-5 h-5 absolute left-4 top-3.5 text-slate-400"></i>
+        <input type="text" id="tipsSearchInput" oninput="handleTipsSearch(event)"
+          placeholder="স্বাস্থ্য টিপস বা লক্ষণ খুঁজুন..."
+          class="w-full pl-12 pr-4 py-3 apple-glass rounded-2xl text-xs sm:text-sm text-slate-800 dark:text-white focus:outline-none focus:border-[#0EA57A]" />
       </div>
 
-      <!-- Controls: Search & Category Filter Pills -->
-      <div class="max-w-3xl mx-auto mb-10 space-y-4">
-        <!-- Live Search -->
-        <div class="relative">
-          <i data-lucide="search" class="w-5 h-5 absolute left-4 top-3.5 text-slate-400"></i>
-          <input type="text" id="tipsSearchInput" oninput="handleTipsSearch(event)"
-            placeholder="স্বাস্থ্য টিপস বা লক্ষণ খুঁজুন..."
-            class="w-full pl-12 pr-4 py-3 bg-white rounded-2xl border border-slate-200 text-sm focus:outline-none focus:border-[#12A585] shadow-sm" />
-        </div>
-
-        <!-- Filter Pills -->
-        <div class="flex flex-wrap items-center justify-center gap-2">
-          <button onclick="filterTips('all')" data-category="all"
-            class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-[#12A585] text-white shadow-sm cursor-pointer"
-            data-i18n="filterAll">সব টিপস</button>
-          <button onclick="filterTips('lifestyle')" data-category="lifestyle"
-            class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/70 hover:bg-white text-slate-600 border border-slate-200 cursor-pointer"
-            data-i18n="filterLifestyle">জীবনযাত্রা ও ডায়েট</button>
-          <button onclick="filterTips('prevention')" data-category="prevention"
-            class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/70 hover:bg-white text-slate-600 border border-slate-200 cursor-pointer"
-            data-i18n="filterPrevention">রোগ প্রতিরোধ</button>
-          <button onclick="filterTips('seasonal')" data-category="seasonal"
-            class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/70 hover:bg-white text-slate-600 border border-slate-200 cursor-pointer"
-            data-i18n="filterSeasonal">মৌসুমী রোগ</button>
-        </div>
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <button onclick="filterTips('all')" data-category="all"
+          class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-[#0EA57A] text-white shadow-md cursor-pointer"
+          data-i18n="filterAll">সব টিপস</button>
+        <button onclick="filterTips('lifestyle')" data-category="lifestyle"
+          class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold apple-glass text-slate-700 dark:text-slate-300 hover:border-[#0EA57A]/40 cursor-pointer"
+          data-i18n="filterLifestyle">জীবনযাত্রা ও ডায়েট</button>
+        <button onclick="filterTips('prevention')" data-category="prevention"
+          class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold apple-glass text-slate-700 dark:text-slate-300 hover:border-[#0EA57A]/40 cursor-pointer"
+          data-i18n="filterPrevention">রোগ প্রতিরোধ</button>
+        <button onclick="filterTips('seasonal')" data-category="seasonal"
+          class="tip-filter-btn px-4 py-2 rounded-xl text-xs font-bold apple-glass text-slate-700 dark:text-slate-300 hover:border-[#0EA57A]/40 cursor-pointer"
+          data-i18n="filterSeasonal">মৌসুমী রোগ</button>
       </div>
+    </div>
 
-      <!-- Dynamic Articles Grid -->
-      <div id="healthTipsContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <!-- Injected via script.js -->
-      </div>
-
+    <!-- Dynamic Articles Grid -->
+    <div id="healthTipsContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Injected via script.js -->
     </div>
   </section>
 
@@ -494,11 +676,13 @@
   <section id="bio" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight" data-i18n="bioTitle">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="bioTitle">
         চিকিৎসক প্রোফাইল ও ক্যারিয়ার
       </h2>
-      <div class="h-1 w-20 bg-gradient-to-r from-[#12A585] to-[#3581B8] mx-auto rounded-full mb-4"></div>
-      <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="bioSubtitle">
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="bioSubtitle">
         ডাঃ সাজ্জাদুর রহমান রুমনের শিক্ষাগত যোগ্যতা, চিকিৎসাসেবার আদর্শ ও অভিজ্ঞতার মাইলফলক।
       </p>
     </div>
@@ -506,35 +690,29 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-6xl mx-auto">
 
       <!-- Left Column: Biography Card -->
-      <div
-        class="lg:col-span-6 bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-slate-200/80 shadow-sm text-left">
+      <div class="lg:col-span-6 apple-glass-card p-8 text-left">
         <div
-          class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#12A585] to-[#3581B8] text-white flex items-center justify-center mb-6 shadow-md shadow-[#12A585]/20">
+          class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#0EA57A] to-[#0284C7] text-white flex items-center justify-center mb-6 shadow-md shadow-[#0EA57A]/20">
           <i data-lucide="award" class="w-6 h-6"></i>
         </div>
 
-        <h3 class="text-2xl font-black text-slate-900 mb-4" data-i18n="bioHeading">
+        <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4" data-i18n="bioHeading">
           সহানুভূতি ও আধুনিক চিকিৎসা বিজ্ঞানের সমন্বয়
         </h3>
 
-        <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="bioP1">
-          ডাঃ সাজ্জাদুর রহমান রুমন বগুড়ার একজন অত্যন্ত সুপরিচিত ও দক্ষ মেডিসিন ও ডায়াবেটিস চিকিৎসক। বাংলাদেশ সিভিল
-          সার্ভিস (বিসিএস স্বাস্থ্য) ক্যাডার কর্মকর্তা এবং শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC), বগুড়ার ফিজিওলজি
-          বিভাগের প্রভাষক হিসেবে তিনি রোগী ও শিক্ষার্থীদের সেবায় নিজেকে নিয়োজিত রেখেছেন।
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4" data-i18n="bioP1">
+          ডাঃ সাজ্জাদুর রহমান রুমন বগুড়ার একজন অত্যন্ত সুপরিচিত ও দক্ষ মেডিসিন ও ডায়াবেটিস চিকিৎসক। বাংলাদেশ সিভিল সার্ভিস (বিসিএস স্বাস্থ্য) ক্যাডার কর্মকর্তা এবং শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC), বগুড়ার ফিজিওলজি বিভাগের প্রভাষক হিসেবে তিনি রোগী ও শিক্ষার্থীদের সেবায় নিজেকে নিয়োজিত রেখেছেন।
         </p>
 
-        <p class="text-sm text-slate-600 leading-relaxed" data-i18n="bioP2">
-          তিনি কেবল প্রেসক্রিপশন নির্ভর চিকিৎসায় বিশ্বাসী নন; বরং রোগীদের জীবনযাত্রার মান পরিবর্তন, পরিমিত পুষ্টি এবং
-          সুষম খাদ্য তালিকার মাধ্যমে ডায়াবেটিস ও মেটাবলিক স্বাস্থ্য সুরক্ষার বৈজ্ঞানিক পরামর্শ প্রদানে বিশেষভাবে কাজ
-          করেন। অপ্রয়োজনীয় ওষুধ এড়িয়ে চলার পক্ষপাতী তিনি।
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="bioP2">
+          তিনি কেবল প্রেসক্রিপশন নির্ভর চিকিৎসায় বিশ্বাসী নন; বরং রোগীদের জীবনযাত্রার মান পরিবর্তন, পরিমিত পুষ্টি এবং সুষম খাদ্য তালিকার মাধ্যমে ডায়াবেটিস ও মেটাবলিক স্বাস্থ্য সুরক্ষার বৈজ্ঞানিক পরামর্শ প্রদানে বিশেষভাবে কাজ করেন। অপ্রয়োজনীয় ওষুধ এড়িয়ে চলার পক্ষপাতী তিনি।
         </p>
       </div>
 
       <!-- Right Column: Academic & Service Timeline -->
-      <div
-        class="lg:col-span-6 bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-slate-200/80 shadow-sm text-left">
-        <h3 class="text-xl font-black text-slate-900 mb-6 flex items-center gap-2">
-          <i data-lucide="graduation-cap" class="w-5 h-5 text-[#12A585]"></i>
+      <div class="lg:col-span-6 apple-glass-card p-8 text-left">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+          <i data-lucide="graduation-cap" class="w-5 h-5 text-[#0EA57A]"></i>
           <span>শিক্ষা ও ক্যারিয়ারের মাইলফলক</span>
         </h3>
 
@@ -547,102 +725,145 @@
   </section>
 
   <!-- ========================================================
-       FAQ SECTION
+       PATIENT TESTIMONIALS SECTION
        ======================================================== -->
-  <section id="faq" class="py-16 bg-[#F3F4F6]/50 border-t border-slate-200/60 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
-      <!-- Header -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight" data-i18n="faqTitle">
-          সাধারণ জিজ্ঞাসা (FAQ)
-        </h2>
-        <div class="h-1 w-20 bg-gradient-to-r from-[#12A585] to-[#3581B8] mx-auto rounded-full mb-4"></div>
-        <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base" data-i18n="faqSubtitle">
-          ভিজিট ফি, সরাসরি সিরিয়াল পাওয়ার নিয়ম ও প্রেসক্রিপশন রি-চেক সংক্রান্ত জরুরি সাধারণ উত্তরসমূহ।
+  <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight"
+        data-i18n="testiTitle">
+        রোগীদের আস্থা ও অভিজ্ঞতা
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed"
+        data-i18n="testiSubtitle">
+        ডাঃ সাজ্জাদুর রহমান রুমনের চিকিৎসাসেবায় সুস্থ হওয়া সাধারণ রোগীদের কিছু প্রতিক্রিয়া।
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div id="testimonialsContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Injected via script.js -->
+    </div>
+  </section>
+
+  <!-- ========================================================
+       EMERGENCY MEDICAL NOTICE BANNER
+       ======================================================== -->
+  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div class="apple-glass rounded-3xl p-6 sm:p-7 border border-rose-500/25 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+      <div class="w-12 h-12 rounded-2xl bg-rose-500/15 flex items-center justify-center text-rose-500 shrink-0">
+        <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-black text-slate-900 dark:text-white text-base mb-1" data-i18n="emergencyTitle">
+          জরুরি স্বাস্থ্য সতর্কতা
+        </h4>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="emergencyDesc">
+          হঠাৎ তীব্র বুকব্যথা, প্রচণ্ড শ্বাসকষ্ট, শরীরের একপাশ অবশ বা অচেতন হওয়ার মতো ঝুঁকিপূর্ণ লক্ষণে দেরি না করে তাৎক্ষণিক সরকারি বা নিকটস্থ হাসপাতালের জরুরি বিভাগে যোগাযোগ করুন।
         </p>
       </div>
+      <a href="tel:999"
+        class="apple-btn bg-rose-500 hover:bg-rose-600 text-white text-xs font-black px-5 py-2.5 rounded-xl shrink-0">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>জরুরি কল ৯৯৯</span>
+      </a>
+    </div>
+  </section>
 
-      <!-- Accordion Container -->
-      <div id="faqContainer" class="space-y-4">
-        <!-- Injected via script.js -->
-      </div>
+  <!-- ========================================================
+       FAQ SECTION
+       ======================================================== -->
+  <section id="faq" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight" data-i18n="faqTitle">
+        সাধারণ জিজ্ঞাসা (FAQ)
+      </h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-[#0EA57A] to-[#0284C7] mx-auto rounded-full mb-4"></div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-xl mx-auto text-xs sm:text-sm leading-relaxed" data-i18n="faqSubtitle">
+        ভিজিট ফি, সরাসরি সিরিয়াল পাওয়ার নিয়ম ও প্রেসক্রিপশন সংক্রান্ত সাধারণ উত্তরসমূহ।
+      </p>
+    </div>
+
+    <!-- Accordion Container -->
+    <div id="faqContainer" class="space-y-3.5">
+      <!-- Injected via script.js -->
     </div>
   </section>
 
   <!-- ========================================================
        GLOBAL FOOTER
        ======================================================== -->
-  <footer class="bg-slate-900 text-slate-400 pt-16 pb-12 border-t border-slate-800">
+  <footer class="mt-16 apple-glass border-t border-slate-200/60 dark:border-slate-800/80 pt-16 pb-28 md:pb-12 text-slate-500 dark:text-slate-400">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
 
       <!-- Brand Column -->
       <div class="md:col-span-6 flex flex-col gap-4 text-left">
         <div class="flex items-center gap-3">
           <div
-            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#12A585] to-[#3581B8] flex items-center justify-center text-white font-black text-lg">
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0EA57A] to-[#0284C7] flex items-center justify-center text-white font-black text-lg">
             S
           </div>
           <div>
-            <span class="font-black text-white tracking-tight text-base block leading-none">
+            <span class="font-black text-slate-900 dark:text-white tracking-tight text-base block leading-none">
               ডাঃ সাজ্জাদুর রহমান রুমন
             </span>
-            <span class="text-xs text-[#12A585] font-bold leading-none block mt-1 uppercase tracking-wider">
-              MBBS, BCS, M-Phil | Medicine & Diabetes
+            <span class="text-xs text-[#0EA57A] font-bold leading-none block mt-1 uppercase tracking-wider">
+              MBBS, BCS, CCD (BIRDEM) | Medicine & Diabetes
             </span>
           </div>
         </div>
 
-        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-md font-medium" data-i18n="footerDesc">
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-md font-medium"
+          data-i18n="footerDesc">
           মেডিসিন ও ডায়াবেটিস চিকিৎসক, প্রভাষক, শহীদ জিয়াউর রহমান মেডিকেল কলেজ, বগুড়া।
         </p>
 
         <div
-          class="flex items-start gap-2.5 mt-2 bg-slate-800/40 p-3.5 rounded-xl border border-slate-800/60 text-xs max-w-md">
-          <i data-lucide="shield-check" class="w-5 h-5 text-[#12A585] shrink-0 mt-0.5"></i>
-          <p class="leading-relaxed font-semibold text-slate-400" data-i18n="footerReg">
-            শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC) বগুড়া থেকে নিবন্ধিত এবং বিসিএস (স্বাস্থ্য) ক্যাডার কর্মকর্তা।
+          class="flex items-start gap-2.5 mt-2 apple-glass p-3.5 rounded-xl text-xs max-w-md">
+          <i data-lucide="shield-check" class="w-5 h-5 text-[#0EA57A] shrink-0 mt-0.5"></i>
+          <p class="leading-relaxed font-semibold" data-i18n="footerReg">
+            শহীদ জিয়াউর রহমান মেডিকেল কলেজ (SZMC) বগুড়া থেকে নিবন্ধিত এবং বিসিএস (স্বাস্থ্য) ক্যাডার কর্মকর্তা। বিএমডিসি রেজিঃ নং A-84951
           </p>
         </div>
       </div>
 
-      <!-- Contact/Support Column -->
+      <!-- Contact / Chamber Hotlines Column -->
       <div class="md:col-span-6 text-left flex flex-col gap-4">
-        <h4 class="text-xs font-black text-white uppercase tracking-wider">
-          চেম্বার বুকিং ও যোগাযোগ (Chamber Booking)
+        <h4 class="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
+          চেম্বার বুকিং ও সরাসরি যোগাযোগ (Chamber Booking)
         </h4>
 
-        <div class="space-y-3 text-xs sm:text-sm">
+        <div class="space-y-3.5 text-xs sm:text-sm">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-[#12A585]">
+            <div class="w-9 h-9 rounded-xl apple-glass flex items-center justify-center text-[#0EA57A]">
               <i data-lucide="phone" class="w-4 h-4"></i>
             </div>
             <div>
-              <span class="block text-[10px] text-slate-500 uppercase tracking-wider font-bold">চেম্বার ১: অক্সিজেন
-                হেলথকেয়ার (গাবতলী)</span>
+              <span class="block text-[10px] text-slate-400 uppercase tracking-wider font-bold">চেম্বার ১: অক্সিজেন হেলথকেয়ার (গাবতলী)</span>
               <a href="tel:01302031077"
-                class="font-bold text-white hover:text-[#12A585] transition-colors font-mono">01302-031077</a>
+                class="font-bold text-slate-900 dark:text-white hover:text-[#0EA57A] transition-colors font-mono">01302-031077</a>
             </div>
           </div>
 
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-[#12A585]">
+            <div class="w-9 h-9 rounded-xl apple-glass flex items-center justify-center text-[#0284C7]">
               <i data-lucide="phone" class="w-4 h-4"></i>
             </div>
             <div>
-              <span class="block text-[10px] text-slate-500 uppercase tracking-wider font-bold">চেম্বার ২: এলিট
-                ডায়াগনস্টিক (বগুড়া)</span>
+              <span class="block text-[10px] text-slate-400 uppercase tracking-wider font-bold">চেম্বার ২: এলিট ডায়াগনস্টিক (বগুড়া)</span>
               <a href="tel:01735164172"
-                class="font-bold text-white hover:text-[#12A585] transition-colors font-mono">01735 164 172</a>
+                class="font-bold text-slate-900 dark:text-white hover:text-[#0284C7] transition-colors font-mono">01735 164 172</a>
             </div>
           </div>
 
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-[#12A585]">
+            <div class="w-9 h-9 rounded-xl apple-glass flex items-center justify-center text-[#0EA57A]">
               <i data-lucide="clock" class="w-4 h-4"></i>
             </div>
             <div>
-              <span class="block text-[10px] text-slate-500 uppercase tracking-wider font-bold">রোগী দেখার সময়</span>
-              <span class="text-xs text-slate-300 font-semibold" data-i18n="footerHours">
+              <span class="block text-[10px] text-slate-400 uppercase tracking-wider font-bold">রোগী দেখার সময়</span>
+              <span class="text-xs text-slate-700 dark:text-slate-300 font-semibold" data-i18n="footerHours">
                 শনি থেকে বুধ বিকাল ৩:৩০ টা | শুক্রবার সকাল ৯:০০ টা
               </span>
             </div>
@@ -654,135 +875,172 @@
 
     <!-- Divider & Copyright -->
     <div
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light text-slate-500">
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200/60 dark:border-slate-800/80 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-400">
       <p data-i18n="footerRights">© 2026 সর্বস্বত্ব সংরক্ষিত। ডাঃ সাজ্জাদুর রহমান রুমন।</p>
-      <div class="flex gap-4">
-        <span>BMDC Reg: </span>
+      <div class="flex items-center gap-3">
+        <span class="text-[#0EA57A] font-bold">BMDC Reg: A-84951</span>
         <span>•</span>
-        <span>BCS (Health)</span>
+        <span>BCS (Health) Cadre</span>
       </div>
     </div>
   </footer>
 
   <!-- ========================================================
-       FLOATING ACTION UTILITIES (WhatsApp & Serial)
+       FLOATING ACTION UTILITIES (Desktop)
        ======================================================== -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
+  <div class="hidden md:flex fixed bottom-6 right-6 z-40 flex-col gap-3 items-end">
     <!-- WhatsApp Floating Action -->
-    <!-- 💬 CUSTOMIZE WHATSAPP:
-         হোয়াটসঅ্যাপ নম্বর পরিবর্তন করতে নিচের লিংকে 8801302031077 এর স্থানে আপনার নম্বর দিন।
-         URL: https://wa.me/<country-code-and-number>?text=<encoded-message>
-    -->
     <a href="https://wa.me/8801302031077?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%A1%E0%A6%BE.%20%E0%A6%B8%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%B0%20%E0%A6%B0%E0%A6%B9%E0%A6%AE%E0%A6%BE%E0%A6%A8%20%E0%A6%B0%E0%A7%81%E0%A6%AE%E0%A6%A8%20%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%20%E0%A6%AC%E0%A7%81%E0%A6%95%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87।"
       target="_blank" rel="noopener noreferrer"
-      class="flex items-center gap-2 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25 transition-all hover:scale-105 group cursor-pointer"
+      class="flex items-center gap-2 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/25 transition-all hover:scale-105 group cursor-pointer"
       title="WhatsApp Chat">
       <span
         class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 text-xs font-bold whitespace-nowrap pl-0 group-hover:pl-2">
         WhatsApp Serial
       </span>
-      <i data-lucide="message-square" class="w-6 h-6 fill-white text-emerald-500"></i>
+      <i data-lucide="message-square" class="w-5 h-5 fill-white text-emerald-500"></i>
     </a>
 
     <!-- Quick Serial Modal Button -->
     <button onclick="openBookingModal()"
-      class="flex items-center gap-2 p-3.5 rounded-full bg-[#12A585] hover:bg-[#0e886d] text-white shadow-lg shadow-[#12A585]/25 transition-all hover:scale-105 group cursor-pointer"
+      class="flex items-center gap-2 p-3.5 rounded-full apple-btn apple-btn-primary text-white shadow-xl shadow-[#0EA57A]/25 transition-all hover:scale-105 group cursor-pointer"
       title="সিরিয়াল বুক করুন">
       <span
         class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 text-xs font-bold whitespace-nowrap pl-0 group-hover:pl-2"
         data-i18n="btnTakeSerial">
         সিরিয়াল বুক করুন
       </span>
-      <i data-lucide="phone-call" class="w-5 h-5 fill-current"></i>
+      <i data-lucide="calendar" class="w-5 h-5"></i>
     </button>
   </div>
 
   <!-- ========================================================
-       MOBILE STICKY BOTTOM BAR (On Scroll)
+       APPLE MOBILE BOTTOM DOCK (Sticky on Scroll)
        ======================================================== -->
   <div id="mobileStickyBar"
-    class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/80 p-3 flex items-center justify-between gap-3 shadow-2xl transition-transform duration-300 translate-y-full">
-    <div class="text-left pl-2">
-      <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">হটলাইন কল</span>
-      <a href="tel:01302031077" class="text-sm font-black text-slate-800 font-mono">01302-031077</a>
-    </div>
+    class="md:hidden fixed bottom-0 left-0 right-0 z-40 apple-mobile-dock px-3 pt-3 flex items-center justify-between gap-2 shadow-2xl transition-transform duration-300 translate-y-full">
+    <!-- Call Chamber 1 -->
+    <a href="tel:01302031077"
+      class="flex-1 py-3 px-2 rounded-xl apple-btn apple-btn-primary text-[11px] font-black flex items-center justify-center gap-1.5 shadow-md">
+      <i data-lucide="phone" class="w-3.5 h-3.5 fill-current"></i>
+      <span>চেম্বার ১</span>
+    </a>
+
+    <!-- Call Chamber 2 -->
+    <a href="tel:01735164172"
+      class="flex-1 py-3 px-2 rounded-xl apple-btn apple-btn-secondary text-[11px] font-black flex items-center justify-center gap-1.5 shadow-md">
+      <i data-lucide="phone" class="w-3.5 h-3.5 fill-current"></i>
+      <span>চেম্বার ২</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/8801302031077?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%A1%E0%A6%BE.%20%E0%A6%B8%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%B0%20%E0%A6%B0%E0%A6%B9%E0%A6%AE%E0%A6%BE%E0%A6%A8%20%E0%A6%B0%E0%A7%81%E0%A6%AE%E0%A6%A8%20%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%20%E0%A6%AC%E0%A7%81%E0%A6%95%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87।"
+      target="_blank" rel="noopener noreferrer"
+      class="p-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-md">
+      <i data-lucide="message-square" class="w-4 h-4 fill-white text-emerald-500"></i>
+    </a>
+
+    <!-- Smart Serial Form Modal -->
     <button onclick="openBookingModal()"
-      class="flex-1 py-3 bg-[#12A585] hover:bg-[#0e886d] text-white text-xs font-black rounded-xl shadow-md cursor-pointer">
-      সিরিয়াল নিন (Take Serial)
+      class="py-3 px-3 rounded-xl apple-btn apple-btn-glass text-[11px] font-black flex items-center justify-center gap-1 text-slate-800 dark:text-white">
+      <i data-lucide="calendar" class="w-3.5 h-3.5 text-[#0EA57A]"></i>
+      <span>ফর্ম</span>
     </button>
   </div>
 
   <!-- ========================================================
-       BOOKING SERIAL MODAL POPUP
+       SMART SERIAL BOOKING & WHATSAPP ASSISTANT MODAL
        ======================================================== -->
   <div id="bookingModal"
-    class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden border border-slate-100 fade-in"
+    class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-md items-center justify-center p-3 sm:p-4">
+    <div
+      class="apple-glass-card max-w-lg w-full shadow-2xl overflow-hidden border border-slate-200/80 dark:border-slate-700/80 fade-in"
       onclick="event.stopPropagation()">
 
       <!-- Modal Header -->
-      <div class="bg-[#12A585] text-white p-6 relative">
+      <div class="bg-gradient-to-r from-[#0EA57A] to-[#0284C7] text-white p-5 sm:p-6 relative">
         <button onclick="closeBookingModal()"
-          class="absolute top-4 right-4 p-1.5 hover:bg-white/10 text-white/80 hover:text-white rounded-full transition-all cursor-pointer">
+          class="absolute top-4 right-4 p-1.5 hover:bg-white/20 text-white/90 hover:text-white rounded-full transition-all cursor-pointer">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
         <div class="flex items-center gap-3">
-          <div class="p-2.5 bg-white/15 rounded-xl">
-            <i data-lucide="phone-call" class="w-6 h-6 text-white"></i>
+          <div class="p-2.5 bg-white/20 rounded-2xl backdrop-blur-md">
+            <i data-lucide="calendar-check" class="w-6 h-6 text-white"></i>
           </div>
-          <div>
-            <h3 class="text-lg font-black tracking-tight" data-i18n="modalTitle">চেম্বার সিরিয়াল বুকিং</h3>
-            <p class="text-xs text-emerald-100" data-i18n="modalSubtitle">সরাসরি কল করে আপনার সিরিয়াল বুক করুন</p>
+          <div class="text-left">
+            <h3 class="text-lg font-black tracking-tight" data-i18n="modalTitle">স্মার্ট চেম্বার সিরিয়াল বুকিং</h3>
+            <p class="text-xs text-emerald-100" data-i18n="modalSubtitle">হটলাইনে কল করুন অথবা হোয়াটসঅ্যাপে তাৎক্ষণিক সিরিয়াল বুক করুন</p>
           </div>
         </div>
       </div>
 
-      <!-- Modal Body -->
-      <div class="p-6 space-y-4 text-left">
+      <!-- Segmented Tab Control -->
+      <div class="p-4 pb-0 text-center">
+        <div class="segmented-control w-full">
+          <button id="modalTabCallBtn" onclick="switchModalTab('call')" class="segmented-option active flex-1"
+            data-i18n="modalTabCall">
+            সরাসরি ফোন কল
+          </button>
+          <button id="modalTabWABtn" onclick="switchModalTab('wa')" class="segmented-option flex-1"
+            data-i18n="modalTabWA">
+            হোয়াটসঅ্যাপে সিরিয়াল
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Content 1: Direct Hotline Calling -->
+      <div id="modalContentCall" class="p-5 sm:p-6 space-y-4 text-left">
         <!-- Chamber 1 -->
-        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200/80 flex flex-col gap-3">
+        <div class="p-4 apple-glass rounded-2xl flex flex-col gap-3">
           <div class="flex items-start justify-between">
             <div>
               <span class="text-[10px] font-black text-slate-400 uppercase tracking-wider">CHAMBER 1</span>
-              <h4 class="text-sm font-black text-slate-800">Oxygen Health Care</h4>
+              <h4 class="text-sm font-black text-slate-900 dark:text-white">Oxygen Health Care</h4>
             </div>
             <span
-              class="text-[10px] text-slate-500 font-bold bg-white px-2 py-0.5 rounded border border-slate-200">গাবতলী,
-              বগুড়া</span>
+              class="text-[10px] text-slate-500 dark:text-slate-400 font-bold bg-white/60 dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-700">
+              গাবতলী, বগুড়া
+            </span>
           </div>
           <div class="flex gap-2 items-center">
             <a href="tel:01302031077"
-              class="flex-1 inline-flex items-center justify-center gap-2 py-3 bg-[#12A585] hover:bg-[#0e886d] text-white font-black text-sm rounded-xl shadow-md transition-all cursor-pointer">
+              class="flex-1 apple-btn apple-btn-primary py-3 text-xs font-black shadow-md">
               <i data-lucide="phone" class="w-4 h-4 fill-current"></i>
               <span>01302-031077</span>
             </a>
             <button onclick="copyNumber('01302031077')"
-              class="p-3 bg-white border border-slate-200 hover:border-slate-300 text-slate-600 rounded-xl transition-all cursor-pointer"
+              class="p-3 apple-btn apple-btn-glass rounded-xl text-slate-700 dark:text-slate-300"
               title="Copy Number">
               <i data-lucide="copy" class="w-4 h-4"></i>
             </button>
+            <a href="https://wa.me/8801302031077" target="_blank" rel="noopener noreferrer"
+              class="p-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl shadow-md"
+              title="WhatsApp Chat">
+              <i data-lucide="message-square" class="w-4 h-4 fill-white text-emerald-500"></i>
+            </a>
           </div>
         </div>
 
         <!-- Chamber 2 -->
-        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200/80 flex flex-col gap-3">
+        <div class="p-4 apple-glass rounded-2xl flex flex-col gap-3">
           <div class="flex items-start justify-between">
             <div>
               <span class="text-[10px] font-black text-slate-400 uppercase tracking-wider">CHAMBER 2</span>
-              <h4 class="text-sm font-black text-slate-800">Elite Diagnostic & Consultation</h4>
+              <h4 class="text-sm font-black text-slate-900 dark:text-white">Elite Diagnostic & Consultation</h4>
             </div>
             <span
-              class="text-[10px] text-slate-500 font-bold bg-white px-2 py-0.5 rounded border border-slate-200">ইয়ারকুবিয়া
-              মোড়, বগুড়া</span>
+              class="text-[10px] text-slate-500 dark:text-slate-400 font-bold bg-white/60 dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200/60 dark:border-slate-700">
+              ইয়ারকুবিয়া মোড়, বগুড়া
+            </span>
           </div>
           <div class="flex gap-2 items-center">
             <a href="tel:01735164172"
-              class="flex-1 inline-flex items-center justify-center gap-2 py-3 bg-[#064E3B] hover:bg-[#043b2b] text-white font-black text-sm rounded-xl shadow-md transition-all cursor-pointer">
+              class="flex-1 apple-btn apple-btn-secondary py-3 text-xs font-black shadow-md">
               <i data-lucide="phone" class="w-4 h-4 fill-current"></i>
               <span>01735 164 172</span>
             </a>
             <button onclick="copyNumber('01735164172')"
-              class="p-3 bg-white border border-slate-200 hover:border-slate-300 text-slate-600 rounded-xl transition-all cursor-pointer"
+              class="p-3 apple-btn apple-btn-glass rounded-xl text-slate-700 dark:text-slate-300"
               title="Copy Number">
               <i data-lucide="copy" class="w-4 h-4"></i>
             </button>
@@ -790,10 +1048,69 @@
         </div>
       </div>
 
+      <!-- Tab Content 2: WhatsApp Serial Generator -->
+      <div id="modalContentWA" class="hidden p-5 sm:p-6 space-y-3.5 text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formName">রোগীর নাম</label>
+            <input type="text" id="waPatientName" placeholder="যেমন: মোঃ করিম"
+              class="w-full px-3.5 py-2.5 rounded-xl apple-glass text-xs font-semibold focus:outline-none focus:border-[#0EA57A]" />
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formPhone">মোবাইল নম্বর</label>
+            <input type="tel" id="waPatientPhone" placeholder="017XXXXXXXX"
+              class="w-full px-3.5 py-2.5 rounded-xl apple-glass text-xs font-mono font-semibold focus:outline-none focus:border-[#0EA57A]" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formAge">বয়স</label>
+            <input type="number" id="waPatientAge" placeholder="যেমন: ৪৫"
+              class="w-full px-3.5 py-2.5 rounded-xl apple-glass text-xs font-semibold focus:outline-none focus:border-[#0EA57A]" />
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formDate">কাঙ্ক্ষিত তারিখ</label>
+            <input type="date" id="waPreferredDate"
+              class="w-full px-3.5 py-2.5 rounded-xl apple-glass text-xs font-semibold focus:outline-none focus:border-[#0EA57A]" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formChamber">চেম্বার নির্বাচন করুন</label>
+          <select id="waChamberSelect"
+            class="w-full px-3.5 py-2.5 rounded-xl apple-glass text-xs font-semibold focus:outline-none focus:border-[#0EA57A]">
+            <option value="Oxygen Health Care (গাবতলী)">Oxygen Health Care (গাবতলী, বগুড়া)</option>
+            <option value="Elite Diagnostic & Consultation (বগুড়া)">Elite Diagnostic (ইয়ারকুবিয়া মোড়, বগুড়া)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="formProblem">সমস্যার সংক্ষিপ্ত বিবরণ</label>
+          <textarea id="waPatientProblem" rows="2" placeholder="যেমন: ডায়াবেটিস রেগুলার চেকআপ ও প্রেসক্রিপশন রিভিউ"
+            class="w-full px-3.5 py-2 rounded-xl apple-glass text-xs font-semibold focus:outline-none focus:border-[#0EA57A]"></textarea>
+        </div>
+
+        <div class="pt-2 flex gap-2">
+          <button onclick="sendWhatsAppSerial()"
+            class="flex-1 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-black flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 cursor-pointer">
+            <i data-lucide="message-square" class="w-4 h-4 fill-white text-emerald-500"></i>
+            <span data-i18n="btnSendWA">হোয়াটসঅ্যাপে সিরিয়াল পাঠান</span>
+          </button>
+          <button onclick="copyWhatsAppMessage()"
+            class="p-3 apple-btn apple-btn-glass rounded-xl text-slate-700 dark:text-slate-300"
+            title="Copy Formatted Message">
+            <i data-lucide="copy" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
       <!-- Modal Footer -->
-      <div class="bg-slate-50 px-6 py-4 border-t border-slate-100 flex justify-end">
+      <div class="apple-glass px-6 py-3.5 border-t border-slate-200/60 dark:border-slate-800 flex justify-end">
         <button onclick="closeBookingModal()"
-          class="px-4 py-2 text-xs font-black text-slate-500 hover:text-slate-800 cursor-pointer"
+          class="px-4 py-1.5 text-xs font-black text-slate-500 hover:text-slate-800 dark:hover:text-white cursor-pointer"
           data-i18n="modalClose">
           বন্ধ করুন (Close)
         </button>
@@ -805,7 +1122,7 @@
   <!-- Toast Notification element -->
   <div id="toast"></div>
 
-  <!-- Standalone Script -->
+  <!-- Main JavaScript File -->
   <script src="./script.js"></script>
 </body>
 
